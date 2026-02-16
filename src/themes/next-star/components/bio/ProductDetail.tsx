@@ -1,7 +1,6 @@
-import { ArrowLeft, Mail, Share2, Check } from "lucide-react";
+import { ArrowLeft, Share2, Check } from "lucide-react";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
 import { Separator } from "@/components/ui/separator";
 import { useLanguage } from "@/i18n/LanguageContext";
 import { toast } from "sonner";
@@ -34,10 +33,10 @@ const ProductDetail = ({ product, onBack }: ProductDetailProps) => {
     switch (product.detailType) {
       case "whiteLabel":
         return <WhiteLabelContent />;
-      case "personalBrand":
-        return <PersonalBrandContent />;
-      case "digitalProducts":
-        return <DigitalProductsContent />;
+      case "openClaw":
+        return <OpenClawContent />;
+      case "mrrBoost":
+        return <MrrBoostContent />;
       default:
         return <DefaultContent product={product} />;
     }
@@ -133,112 +132,54 @@ const WhiteLabelContent = () => {
   );
 };
 
-// Personal Brand Challenge Content
-const PersonalBrandContent = () => {
+// OpenClaw Setup & Operation Content
+const OpenClawContent = () => {
   const { t } = useLanguage();
 
   return (
     <div className="space-y-6">
-      {/* Stats Section */}
+      {/* Description */}
       <div className="space-y-4 text-foreground">
-        <p className="font-medium">{t("statsIntro")}</p>
-        <ul className="space-y-3">
-          <li className="flex items-start gap-2">
-            <span className="text-[hsl(170,100%,19%)] font-bold">•</span>
-            <span>{t("stat1")}</span>
-          </li>
-          <li className="flex items-start gap-2">
-            <span className="text-[hsl(170,100%,19%)] font-bold">•</span>
-            <span>{t("stat2")}</span>
-          </li>
-          <li className="flex items-start gap-2">
-            <span className="text-[hsl(170,100%,19%)] font-bold">•</span>
-            <span>{t("stat3")}</span>
-          </li>
-        </ul>
+        <p className="text-lg font-medium">{t("openClawDescription")}</p>
+        <Separator />
+        <p>{t("openClawFeatures")}</p>
+        <p>{t("openClawPerfect")}</p>
       </div>
 
-      <Separator />
-
-      {/* What You'll Learn */}
-      <div className="space-y-4">
-        <p className="font-medium text-foreground">{t("personalBrandIntro")}</p>
-        <ul className="space-y-3 text-muted-foreground">
-          <li className="flex items-start gap-2">
-            <span className="text-[hsl(170,100%,19%)]">✓</span>
-            <span>{t("personalBrand1")}</span>
-          </li>
-          <li className="flex items-start gap-2">
-            <span className="text-[hsl(170,100%,19%)]">✓</span>
-            <span>{t("personalBrand2")}</span>
-          </li>
-          <li className="flex items-start gap-2">
-            <span className="text-[hsl(170,100%,19%)]">✓</span>
-            <span>{t("personalBrand3")}</span>
-          </li>
-          <li className="flex items-start gap-2">
-            <span className="text-[hsl(170,100%,19%)]">✓</span>
-            <span>{t("personalBrand4")}</span>
-          </li>
-        </ul>
-      </div>
-
-      {/* Contact Form */}
-      <div className="mt-8 space-y-4">
-        <p className="font-medium">{t("enrollBelow")}</p>
+      {/* Contact Section */}
+      <div className="mt-8 p-6 border border-border rounded-xl bg-muted/30">
         <Button
           className="w-full bg-[hsl(170,100%,19%)] hover:bg-[hsl(170,100%,15%)] text-white rounded-full py-6"
-          onClick={() => window.open("https://sagozen.digital/discord", "_blank")}
+          onClick={() => window.open("mailto:hello@sagozen.digital", "_blank")}
         >
-          {t("joinCommunity")}
+          {t("contactUs")}
         </Button>
       </div>
     </div>
   );
 };
 
-// Digital Products Content
-const DigitalProductsContent = () => {
+// MRR Boost Content
+const MrrBoostContent = () => {
   const { t } = useLanguage();
 
   return (
     <div className="space-y-6">
       {/* Description */}
-      <p className="text-lg text-foreground">{t("digitalProductsDescription")}</p>
-
-      <Separator />
-
-      {/* What's Included */}
-      <div className="space-y-4">
-        <p className="font-medium text-foreground">{t("digitalProductsIntro")}</p>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-          <div className="p-4 rounded-xl bg-muted/50 border border-border">
-            <span className="text-2xl mb-2 block">🎨</span>
-            <p className="font-medium">{t("digitalProduct1")}</p>
-          </div>
-          <div className="p-4 rounded-xl bg-muted/50 border border-border">
-            <span className="text-2xl mb-2 block">📚</span>
-            <p className="font-medium">{t("digitalProduct2")}</p>
-          </div>
-          <div className="p-4 rounded-xl bg-muted/50 border border-border">
-            <span className="text-2xl mb-2 block">📖</span>
-            <p className="font-medium">{t("digitalProduct3")}</p>
-          </div>
-          <div className="p-4 rounded-xl bg-muted/50 border border-border">
-            <span className="text-2xl mb-2 block">🎁</span>
-            <p className="font-medium">{t("digitalProduct4")}</p>
-          </div>
-        </div>
+      <div className="space-y-4 text-foreground">
+        <p className="text-lg font-medium">{t("mrrBoostDescription")}</p>
+        <Separator />
+        <p>{t("mrrBoostFeatures")}</p>
+        <p>{t("mrrBoostPerfect")}</p>
       </div>
 
-      {/* Contact Form */}
-      <div className="mt-8 space-y-4">
-        <p className="font-medium">{t("enrollBelow")}</p>
+      {/* Contact Section */}
+      <div className="mt-8 p-6 border border-border rounded-xl bg-muted/30">
         <Button
           className="w-full bg-[hsl(170,100%,19%)] hover:bg-[hsl(170,100%,15%)] text-white rounded-full py-6"
-          onClick={() => window.open("https://sagozen.digital/discord", "_blank")}
+          onClick={() => window.open("mailto:hello@sagozen.digital", "_blank")}
         >
-          {t("joinCommunity")}
+          {t("contactUs")}
         </Button>
       </div>
     </div>

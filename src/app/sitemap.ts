@@ -63,74 +63,16 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.9,
     },
     {
-      url: `${baseUrl}/#digital-products`,
-      lastModified: currentDate,
-      changeFrequency: "weekly",
-      priority: 0.8,
-    },
-    {
-      url: `${baseUrl}/#3d-graphics-mockups`,
-      lastModified: currentDate,
-      changeFrequency: "monthly",
-      priority: 0.7,
-    },
-    {
-      url: `${baseUrl}/#professional-book-covers`,
-      lastModified: currentDate,
-      changeFrequency: "monthly",
-      priority: 0.7,
-    },
-    {
-      url: `${baseUrl}/#kdp-books`,
-      lastModified: currentDate,
-      changeFrequency: "monthly",
-      priority: 0.7,
-    },
-    {
-      url: `${baseUrl}/#pod-decorative-items`,
-      lastModified: currentDate,
-      changeFrequency: "monthly",
-      priority: 0.7,
-    },
-  ];
-
-  // Consulting section routes
-  const consultingSectionRoutes: MetadataRoute.Sitemap = [
-    {
-      url: `${baseUrl}/#consulting`,
-      lastModified: currentDate,
-      changeFrequency: "weekly",
-      priority: 0.9,
-    },
-    {
-      url: `${baseUrl}/#personal-brand`,
+      url: `${baseUrl}/p/openclaw-setup`,
       lastModified: currentDate,
       changeFrequency: "monthly",
       priority: 0.8,
     },
     {
-      url: `${baseUrl}/#skill-stack`,
+      url: `${baseUrl}/p/mrr-boost`,
       lastModified: currentDate,
       changeFrequency: "monthly",
-      priority: 0.7,
-    },
-    {
-      url: `${baseUrl}/#minimum-viable-offer`,
-      lastModified: currentDate,
-      changeFrequency: "monthly",
-      priority: 0.7,
-    },
-    {
-      url: `${baseUrl}/#distribution-system`,
-      lastModified: currentDate,
-      changeFrequency: "monthly",
-      priority: 0.7,
-    },
-    {
-      url: `${baseUrl}/#brand-monetization`,
-      lastModified: currentDate,
-      changeFrequency: "monthly",
-      priority: 0.7,
+      priority: 0.8,
     },
   ];
 
@@ -138,6 +80,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...mainRoutes,
     ...productSectionRoutes,
     ...serviceSectionRoutes,
-    ...consultingSectionRoutes,
   ];
 }

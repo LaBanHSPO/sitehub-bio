@@ -8,7 +8,7 @@ export type Product = {
   price?: string;
   buttonTextKey: string;
   externalLink?: string;
-  detailType?: "whiteLabel" | "personalBrand" | "digitalProducts";
+  detailType?: "whiteLabel" | "openClaw" | "mrrBoost";
   badge?: BadgeType;
   imageStyle?: "default" | "raw";
 };
@@ -73,23 +73,24 @@ export const products: Record<string, Product[]> = {
   ],
   consulting: [
     {
-      id: "personal-brand",
+      id: "openclaw-setup",
       imageUrl:
-        "https://images.unsplash.com/photo-1552664730-d307ca884978?w=200&h=200&fit=crop",
-      titleKey: "personalBrandCardTitle",
-      descriptionKey: "personalBrandCardDesc",
-      buttonTextKey: "watchForFree",
-      detailType: "personalBrand",
-      badge: "hot",
+        "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=200&h=200&fit=crop",
+      titleKey: "openClawCardTitle",
+      descriptionKey: "openClawCardDesc",
+      buttonTextKey: "detail",
+      detailType: "openClaw",
+      badge: "new",
     },
     {
-      id: "digital-products",
+      id: "mrr-boost",
       imageUrl:
-        "https://images.unsplash.com/photo-1507925921958-8a62f3d1a50d?w=200&h=200&fit=crop",
-      titleKey: "digitalProductCardTitle",
-      descriptionKey: "digitalProductCardDesc",
-      buttonTextKey: "watchForFree",
-      detailType: "digitalProducts",
+        "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=200&h=200&fit=crop",
+      titleKey: "mrrBoostCardTitle",
+      descriptionKey: "mrrBoostCardDesc",
+      buttonTextKey: "detail",
+      detailType: "mrrBoost",
+      badge: "hot",
     },
   ],
 };
