@@ -1,6 +1,6 @@
-![SiteHub.bio - 5 mins to get your own bio](./public/og-image.png)
+![AvioBrand (prev SiteHub) - 5 mins to get your own bio, free forever](./public/og-image.png)
 
-# 🚀 SiteHub.bio
+# 🚀 AvioBrand.com
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![Next.js](https://img.shields.io/badge/Next.js-15-black?logo=next.js&logoColor=white)](https://nextjs.org/)
@@ -8,15 +8,15 @@
 
 > 🎉 **100% Free Forever** | Fast | Easy Configuration | Fully Open Source
 
-**SiteHub.bio** is a modern bio link template featuring **Dark Mode**, **Multi-language**, and **AI-friendly design**. Since the source code is stored in your GitHub, you have complete freedom to customize every detail, create a **unique identity** that stands out from the crowd. With source code stored in your GitHub, you own your data and platform completely - we have zero access. Deploy effortlessly to **Cloudflare Pages, Vercel, Netlify, or any static host** for free.
+**SiteHub OSS** is a modern bio link template featuring **Dark Mode**, **Multi-language**, and **AI-friendly design**. Since the source code is stored in your GitHub, you have complete freedom to customize every detail, create a **unique identity** that stands out from the crowd. With source code stored in your GitHub, you own your data and platform completely - we have zero access. Deploy effortlessly to **Cloudflare Pages, Vercel, Netlify, or any static host** for free.
 
-**Live Demo**: [https://pandev00.sitehub.bio](https://pandev00.sitehub.bio)
+**Live Demo**: [https://aviobrand.com/p/pandev00](https://aviobrand.com/p/pandev00)
 
 ---
 
 ## 💡 Use Cases
 
-Transform your online presence with SiteHub.bio:
+Transform your online presence with AvioBrand.com:
 
 1. **Link in Bio** - Centralize all your social links, content, and calls-to-action in one clean page.
 2. **Digital Business Card** - Share your professional identity with a scannable QR code and instant contact info.
@@ -28,7 +28,7 @@ Transform your online presence with SiteHub.bio:
 
 ## 🌟 Why Choose SiteHub.bio?
 
-| Feature | SiteHub.bio | Linktree | Stan Store |
+| Feature | SiteHub Bio (OSS) | Linktree | Stan Store |
 |---------|---------------------|----------|------------|
 | **Monthly Cost** | $0 Forever | $8-$35/mo | $29/mo |
 | **Custom Domain** | ✅ Free | ✅ Paid plans | ✅ Included |
