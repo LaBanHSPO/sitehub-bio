@@ -10,7 +10,7 @@
 
 **SiteHub OSS** is a modern bio link template featuring **Dark Mode**, **Multi-language**, and **AI-friendly design**. Since the source code is stored in your GitHub, you have complete freedom to customize every detail, create a **unique identity** that stands out from the crowd. With source code stored in your GitHub, you own your data and platform completely - we have zero access. Deploy effortlessly to **Cloudflare Pages, Vercel, Netlify, or any static host** for free.
 
-**Live Demo**: [https://aviobrand.com/p/pandev00](https://aviobrand.com/p/pandev00)
+**Live Demo**: [https://go.pandev00.com](https://go.pandev00.com/)
 
 ---
 
@@ -150,7 +150,7 @@ This project is licensed under the **MIT License**.
 
 <div align="center">
   <a href="https://sagozen.digital" target="_blank">
-    <img src="https://assets.sitehub.bio/sagozen.jpg" alt="SAGOZEN LLC" width="200" />
+    <img src="https://sagozen.digital/logo-square-min512.png" alt="SAGOZEN LLC" width="200" />
   </a>
   
   **[SAGOZEN LLC](https://sagozen.digital)**
@@ -162,7 +162,7 @@ This project is licensed under the **MIT License**.
 
 ## 🌍 Community & Support
 
-- 💬 **Discord**: [Join our community](https://discord.com/invite/WyW6MDgjzZ)
+- 💬 **Discord**: [Join our community](https://discord.gg/MPDm4kmtU)
 - 📧 **Email**: hello@sagozen.digital
 
 ---
